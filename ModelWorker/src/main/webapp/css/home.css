@@ -1,0 +1,38 @@
+/* home 样式 */
+p {
+    font-size: 18px;
+}
+.home-con {
+    margin-right: 10px;
+}
+.user_word {
+    margin-top: 20px;
+    margin-left: 10px;
+    border-bottom: 3px solid #8a6d3b;
+}
+.user_word p {
+    margin-bottom: 20px;
+}
+.user_word p span {
+    padding-left: 10px;
+    padding-top: -5px;
+}
+.current_welfare {
+    margin-left: 10px;
+    border-bottom: 3px solid #3c763d;
+}
+.current_welfare p:last-child {
+    margin-bottom: 40px;
+}
+.optional_welfare {
+    margin-left: 10px;
+}
+.optional-1 {
+    margin-bottom: 20px;
+}
+.optional-2 {
+    margin-bottom: 80px;
+}
+.media-heading {
+    font-weight: bold;
+}

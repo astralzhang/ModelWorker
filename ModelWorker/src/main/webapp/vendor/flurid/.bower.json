@@ -1,0 +1,13 @@
+{
+  "name": "flurid",
+  "homepage": "https://github.com/kflorence/flurid",
+  "_release": "52c8af4fea",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "52c8af4feaabdebd25798d116a22d67350f07cb5"
+  },
+  "_source": "https://github.com/kflorence/flurid.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/kflorence/flurid.git"
+}

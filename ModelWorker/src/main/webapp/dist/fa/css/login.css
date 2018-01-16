@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "microsoft yahei", sans-serif;
+    *font-family: "microsoft yahei";
+    background: url("../images/bg_login.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.login-container {
+    position: absolute;
+    width: 664px;
+    min-width: 380px;
+	margin-left:-332px;
+    top: 50px;
+    bottom:10%;
+    left:50%;
+    transition:1s; -webkit-transition:1s; -moz-transition:1s;
+}
+
+.login-box {
+	width:330px;
+    /*padding:0 30px 30px;*/
+    min-height: 300px;
+    border-radius: 8px;
+    background-color: #fff;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.login-box label {
+    color:#666;
+}
+.login-box .login_title {
+	width:330px;
+	height:60px;
+	line-height:60px;
+	color:#fff;
+	font-size:24px;
+	text-align:center;
+	text-shadow:0 1px 1px rgba(29,125,232,1);
+	background: url(../images/bg_login_tit.jpg) center no-repeat;
+}
+.form-group span.glyphicon {
+	width:24px;
+	height:24px;
+	top:7px;
+	position: absolute;
+}
+.form-group .ico_uesr{background: url(../images/icon_user.png) center no-repeat;}
+.form-group .ico_password{background: url(../images/icon_password.png) center no-repeat;}
+.form-group .ico_code{background: url(../images/icon_code.png) center no-repeat;}
+.form-group .form-control,.form-group .form-control2{ height: 38px; opacity: .8;}
+.form-control:focus,.form-group .form-control2:focus {
+    opacity: 1!important;
+}
+.code{width:104px;height:38px;top:0;right:0;background: url(../images/code.jpg) center no-repeat; position: absolute;display:inline-block;border:1px solid #ccc;}
+.shadow {
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    filter:progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=135, Strength=4);
+}
+.title {
+    width: 664px;
+    height: 130px;
+    margin:0 auto;
+    text-indent: -9999px;
+    background: url(../images/login_logo.png) no-repeat center center;
+	background-size:65%;
+
+}
+.links a { text-align: center; margin: 0 6px;color: #000; float: left; }
+.links hr {opacity: .5;}
+
+@media (max-width:640px){
+    .login-container {
+        width:auto;
+        min-width:50%;
+        top:5px;
+        left:20px;
+        right: 20px;
+        bottom:5px;
+    }
+
+    .login-container br {margin: 0;}
+
+}
+.code_tag{color:red;text-align: center;font-weight: bold}

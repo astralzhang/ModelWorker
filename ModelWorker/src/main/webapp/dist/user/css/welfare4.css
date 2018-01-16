@@ -1,0 +1,22 @@
+/* welfare4 样式 */
+.wait_effect {
+    margin-left: 30%;
+    margin-top: 25px;
+}
+.wait_effect span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FF6600;
+}
+.redo {
+    width: 85px;
+    height: 30px;
+    background: url(../images/u1292.png) no-repeat 60px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.redo:hover {
+    border: none;
+    background: rgba(25,298,50,.7);
+    color: #fff;
+}

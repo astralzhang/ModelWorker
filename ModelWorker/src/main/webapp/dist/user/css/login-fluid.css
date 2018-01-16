@@ -1,0 +1,508 @@
+/**
+ * login Common Style
+ * @author: LangLee;
+ * 基于 common.css
+ **/
+/* ==全局通用样式== */
+input{font:12px/1.5 "Microsoft Yahei","Helvetica Neue",sans-serif;}
+input:focus{
+	border:none;
+}
+/* 避免因子元素浮动而导致的父元素高度缺失能问题 */
+.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .cl { zoom: 1; }
+
+/* 浮动 */
+.z { float: left !important; }
+.y { float: right !important; }
+
+/* 鼠标样式，可以根据需要按序添加 */
+.cur1 { cursor: pointer; }
+
+/* 显示/隐藏 */
+.show { display: block !important; }
+.hide { display: none !important; }
+
+/* 相对定位 */
+.pos { position: relative; }
+
+/* 灰色 */
+.grays { 
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */ 
+    -webkit-filter: grayscale(100%); /* chrome+ */ 
+    filter: grayscale(100%); /* 未来浏览器 */ 
+    filter: gray; /* ie6-8 */ 
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);/*ie6-9 */  
+}
+
+/* 通用容器，定义页面宽度 具有 n, m, w 三个级别 */
+.wpn { width: 1180px; margin: 0 auto; }  	/* 4 列 * 300 */
+.wpm { width: 1480px; margin: 0 auto; }  	/* 5 列 * 300 */
+.wpw { width: 1780px; margin: 0 auto; } 	/* 6 列 * 300 */
+
+.wpf { width: 100%; max-width: 1260px; margin: 0 auto; }  	/* 4 列 * 300 */  /*实际宽度1180+左右边距各40*/
+.wpf-row { width: 93.6507936%; margin: 0 3.1746031%;}   /*1180/1260,40/1260*/
+.row { width: 100% }
+
+/* 主体内容 */
+.ct { display: block; min-height: 530px;}
+
+/* 主体内容 - 带边栏 */
+/*.ctn .mn { width: 880px; float: left; }
+.ctn .sd { width: 280px; float: right; }*/
+.ctn .mn {margin:0 300px 0 0; padding-top: 20px;}
+.ctn .sd {position: absolute; right: 280px; top: 0; bottom: 0; }
+
+/* 文本属性：字号、颜色、粗细、正斜 */
+/* 字号 */
+.f12 { font-size: 12px; }
+.f14 { font-size: 14px; }
+.f16 { font-size: 16px; }
+.f26 { font-size: 26px; }
+
+/* 颜色 */
+.b8c5ce { color: #b8c5ce; }
+.ff8326 { color: #ff8326; }
+
+/* 粗细 */
+.b { font-weight: bold; }
+
+/* 正斜 */
+.i { font-style: italic; }
+
+/* 外边距样式，作用于元素的上下外边距，上下各具有 n, m, w 三个级别 */
+.mtn { margin-top: 5px !important; }
+.mtm { margin-top: 10px !important; }
+.mtw { margin-top: 20px !important; }
+
+.mbn { margin-bottom: 5px !important; }
+.mbm { margin-bottom: 10px !important; }
+.mbw { margin-bottom: 20px !important; }
+
+.mrn { margin-right: 5px !important; }
+.mrm { margin-right: 10px !important; }
+.mrw { margin-right: 20px !important; }/*20/1180=1.6949152%*/
+
+.mln { margin-left: 5px !important; }
+.mlm { margin-left: 10px !important; }
+.mlw { margin-left: 20px !important; }
+
+.mtbn { margin: 5px 0 !important; }
+.mtbm { margin: 10px 0 !important; }
+.mtbw { margin: 20px 0 !important; }
+
+.mlrn { margin: 0 5px !important; }
+.mlrm { margin: 0 10px !important; }
+.mlrw { margin: 0 20px !important; }
+
+
+/* 内边距样式，作用于元素的上下内边距，上下各具有 n, m, w 三个级别 */
+.ptn { padding-top: 5px !important; }
+.ptm { padding-top: 10px !important; }
+.ptw { padding-top: 20px !important; }
+
+.pbn { padding-bottom: 5px !important; }
+.pbm { padding-bottom: 10px !important; }
+.pbw { padding-bottom: 20px !important; }
+
+.ptbn { padding: 5px 0 !important; }
+.ptbm { padding: 10px 0 !important; }
+.ptbw { padding: 20px 0 !important; }
+
+.plrn { padding: 0 5px !important; }
+.plrm { padding: 0 10px !important; }
+.plrw { padding: 0 20px !important; }
+
+/* ==== loding 2015-4-8 ===*/
+.loding{background-image:url("../img/loding.gif");background-repeat:no-repeat;background-position:center center;background-size:20px;}
+.loding2{background-image:url("../img/loding2.gif")!important;background-color:#3499DA !important;background-repeat:no-repeat;background-position:center center;background-size:20px;} 
+/* ==== 按钮 Buttons  2015-1-12==== */
+.lang-btn {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	background-color: #3499DA;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFF;
+	border: none;
+	letter-spacing: 1px;
+	overflow: hidden;
+	text-align: center;
+	border-radius:2px;
+}
+/* 无背景按钮 */
+.lang-cancel{background:0;color:#2d3e50}
+/* 取消按钮 */
+.lang-btn-none{background:#e4e9ed;color:#2d3e50;}
+.lang-btn-none:hover{background:#e4e9ed;color:#2d3e50;}
+
+.lang-btn-c{display:inline-block;position:relative;vertical-align:middle;cursor:pointer;white-space:nowrap;background:#e4e9ed;height:40px;line-height:40px;
+			font-size:16px;color:#2d3e50;border:0;letter-spacing:1px;overflow:hidden;text-align:center;border-radius:2px}
+/* 修改按钮的默认状态 */
+.lang-btn:active{outline:0;box-shadow:none}
+.lang-btn:focus{border:0;outline:0;box-shadow:none}
+.lang-btn:hover{text-decoration:none}
+
+/* 火狐兼容 */
+.lang-btn::-moz-focus-inner {border: 0;padding: 0;}
+/* 成功 */
+.lang-btn-success { background-color: #4a993e; }
+/* 错误 */
+.lang-btn-eroor { background-color: #b33630; }
+/* 不可提交状态 */
+.lang-btn-disabled { background-color: #ddd; color: #777; cursor: default; }
+/* 展示 */
+.lang-btn-show { background-color: #e4e9ed; color: #2d3e50; cursor: default; }
+/* 关联 */
+.lang-btn-relating { background-color: #b8c5ce; color: #2d3e50; }
+
+
+/* 按钮文字 */
+.lang-btn .lang-btn-content {  padding: 0 30px; display: block; }
+/* 大的 */
+.lang-btn-big .lang-btn-content { padding: 0 45px; }
+/* 巨大的 */
+.lang-btn-huge { height: 50px; line-height: 50px; }
+.lang-btn-huge .lang-btn-content { padding: 0 45px; }
+/* 按钮的颜色 */
+.lang-btn-col-blue{background:#3499DA;color:#fff;}
+.lang-btn-col-blue:hover{background:#3da2e3;color:#fff;}
+/* 固定宽度的 */
+.lang-btn-fixed-small { width: 100px; }
+.lang-btn-fixed-small .lang-btn-content { padding: 0; }
+
+.lang-btn-fixed-big { width: 160px; }
+.lang-btn-fixed-big .lang-btn-content { padding: 0; }
+
+.lang-btn-fixed-Large { width: 100%; }
+.lang-btn-fixed-Large .lang-btn-content { padding: 0; }
+
+/* 小字号按钮 举报弹出框再用 */
+.submit-button{width:80px;height:40px;background:#3499da;color:#fff;font-size:14px;cursor:pointer;line-height:40px;border:0;border-radius:2px}
+.submit-button:hover{background:#3da2e3;transition:all .4s ease-in-out 0s}
+.submit-button:active{background:#2e93d4}
+.mini-button-disabble{width:80px;height:40px;background:#b8c5ce;color:#fff;font-size:14px;cursor:pointer;line-height:40px;border:0;border-radius:2px}
+.mini-button-disabble:hover{background:#c8d4db;transition:all .4s ease-in-out 0s}
+.mini-button-disabble:active{background:#a9b9c3}
+
+/* 按钮 Buttons END */
+
+ /* ==== 表单 Input 框 2015-2-28==== 以前的颜色b8c4ce*/
+.lang-input{padding:14px 15px;height:20px;border:#e4e9ed 1px solid;border-radius:2px;background:#fff;color:#5d6d7e;font-size:16px;line-height:20px;box-sizing: content-box;}
+
+.lang-input:focus {
+    border: 1px solid #3498db;
+    box-shadow: 0 0 4px rgba(41, 128, 185, 0.4);
+}
+/* 焦点/成功 */
+.lang-input-on, .lang-input-success {
+	border: #3498db 1px solid;
+	box-shadow: 0 0 4px rgba(41, 128, 185, 0.4);
+	color: #34495e;
+}
+/* 错误 */
+.lang-input-error {
+	border: #fcab2b 1px solid;
+	box-shadow: 0 0 4px rgba(252, 171, 43, 0.4);
+}
+
+/* form 表单固定宽度 */
+.w520 { width: 488px; } /* 实际宽度520-内边距左右各15px-边框2 */
+.w880 { width: 848px; } /* 实际宽度520-内边距左右各15px-边框2 */
+.w580 { width: 548px; } /* 实际宽度520-内边距左右各15px-边框2 */
+
+/* textarea使用 */
+.h164 { height: 130px; }
+.lh20 { line-height: 24px; }
+
+.lang-must{ position: absolute; right: 11px; color: #FD8335!important; line-height: 50px!important;}
+/* 表单 Input 框 END */
+
+ /* ====注册输入框 2015-1-12==== */
+.login-icon { display: block; height: 41px; width: 100%;  border-bottom: #e9ecee 1px solid; margin-top: 30px; }
+
+/* 输入框活动状态/成功 */
+.login-on, .login-success { border-bottom: #3498db 1px solid; }
+.login-on .log-input, .login-error .log-input, .login-success .log-input { color: #5d6d7e; }
+.login-on .iconfont, .login-success .iconfont{color: #3A99D8;}
+
+/* 错误 */
+.login-error { border-bottom: #fcab2b 1px solid; }
+.login-error .iconfont{ color: #fcab2b;}
+
+/* 登录输入框 */
+.log-input { border: none; height: 40px; font-size: 16px; padding: 10px 2.5%; line-height: 20px; color:  #b8c4ce; background: #fff; width: 90%;}
+			/*30/400=7.5%,360/400=90%,10/400=2.5%*/
+.log-input-half { border: none; height: 20px; font-size: 16px; padding: 10px 5%; line-height: 20px; color:  #b8c4ce; background: #fff; width: 80%;}
+			/*30/200=15%,160/200=80%,10/200=5%*/
+.log-input::-moz-placeholder { color: #b8c4ce;}
+.log-input::-ms-input-placeholder { color: #b8c4ce;}
+.log-input::-webkit-input-placeholder { color: #b8c4ce;}
+.log-input:placeholder { color: #b8c4ce;}
+.log-input:foucs{border: none;}
+textarea::-moz-placeholder { color: #b8c4ce;}
+textarea::-ms-input-placeholder { color: #b8c4ce;}
+textarea::-webkit-input-placeholder { color: #b8c4ce;}
+textarea:placeholder { color: #b8c4ce;}
+/* 注册输入框 end */
+
+/*message 提醒消息*/
+#ajax-hook{ position:fixed; top:0; z-index:99999; width:100%;}
+.globalInfoTip {z-index: 20; height: 60px;width: 100%;position: relative;cursor: pointer;}
+.globalInfoTip p {text-align: center;font-size: 16px;height: 30px;line-height: 30px;padding: 15px 0;color: #FFF;position: relative;}
+.globalInfoTip .infoTipBack {position: absolute;top: 0;left: 0;right: 0;bottom: 0;background: #3498db;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);opacity: 0.8;filter:alpha(opacity=80);-moz-opacity: 0.8;-khtml-opacity: 0.8;}
+
+/* 没有任何内容的时候提示 */
+.kong{width:100%;background:url("../img/serch-null.png") no-repeat center center;height:700px;}
+
+/*点击按钮后显示正在加载状态*/
+.loading{background-image:url("../img/loading2.gif")!important;background-color:#3499DA !important;background-repeat:no-repeat;background-position:center center;background-size:20px;} 
+
+/*字体图标*/
+.iconfont, [class^="icon-"], [class*=" icon-"] {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  color: #b8c4ce;
+  font-style:normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+[id^="xunlei_com"],[id*="xunlei_com"]{
+	display:none !important;
+}
+
+/*网站整体灰色背景*/
+body,
+.body-gray { background-color: #eff3f5; }
+/*部分白色背景*/
+.bg-white { background-color: #fff;}
+
+
+
+html, body { background: #eff2f5;}
+
+.wpl { width: 100%; max-width: 1080px; margin: 0 auto; }
+.log-row-cx {width:92.5925925%; min-height:400px;margin:0 3.7037037%; background: #fff;}/*1000/1080,40/1080*/
+.log-row {position: relative; height:80px;width:92.5925925%; margin:0 3.7037037%;}/*1000/1080,40/1080*/
+.log-wrap { position: relative; padding: 50px 0 0 0; z-index: 5; }
+.log-logo, .log-title, .log-nav { float: left; }
+/* 主体 */
+.log-content { min-height: 330px; height:auto;  border-top: 2px solid #e4e9ee; position:relative; background-color: #fff; /*background: #FFF url("../img/log-content-bg.png") repeat-x 0 100%;*/}
+.login-wrap { width: 70%;/*700/1000*/  }
+
+/* ====登陆注册找回密码公用头部==== */
+.log-hd { height: 80px; margin-bottom: 20px; position: relative; }
+/* logo */
+.log-hd .log-logo { margin-right: 20px; position: absolute; left: 0;}
+.log-hd .log-logo a {width:94px;height:74px; display: block; }
+.log-hd .log-logo img {width:94px;height:74px; display: block; }
+/* logo 标题/副标题 */
+.log-hd .log-title { height: 66px; padding: 7px 0; position: absolute; left: 0; margin-left: 115px;}
+.log-hd .log-title strong, .log-title p { display: block; }
+.log-hd .log-title strong { font-size: 26px; }
+.log-hd .log-title p { font-size: 16px; }
+/* 导航 */
+.log-hd .log-nav { display: block; height: 40px; margin: 20px 0 20px 376px;}
+.log-hd .log-nav li { float: left;  }
+.log-hd .log-nav li a { display: block; padding: 0 11px; font-size: 14px; line-height: 40px; color: #7b8b95; }
+.log-hd .log-nav li a:hover { text-decoration: none; color: #369; }
+/* ====登陆注册找回密码公用头部 结束 ==== */
+
+/* 输入框图标 */
+#password{ position:absolute; z-index:10; background:none;left: 0;}
+.mls { margin-left: 30px !important; }
+.la_password{color: #b8c4ce;font-size: 16px;position: absolute;padding: 12px 2.5%;top: 0;height: 16px;line-height: 16px;left: 0; z-index:1;}
+/* 忘记密码 */
+.login-msg { height: 28px; line-height: 28px; margin-top:15px; display: block; font-size: 14px; color: #b8c4ce;}
+.login-msg .login-forget { text-decoration: none; color: #369; }
+.login-msg .login-forget:hover { color: #3498db; }
+
+/* 卡通-美人鱼 */
+.log-shade { width: 50px; height: 228px; position: absolute; top: 40px; /*left: 690px;*/ right: 330px; background: url("../img/log-shade.png") no-repeat 0 0; border-right: 1px solid #e9ecee;}
+.log-cartoon { width: 335px; height: 307px; position: absolute; top: 38px; /*left: 700px;*/ right: 40px; 
+	background: url("../img/log-cartoon.png") no-repeat 0 0; 
+	background-image: -webkit-image-set(url("../img/log-cartoon.png") 1x, url("../img/@2x/log-cartoon@2x.png") 2x);
+    background-image: -moz-image-set(url("../img/log-cartoon.png") 1x,url("../img/@2x/log-cartoon@2x.png") 2x);
+    background-image: -ms-image-set(url("../img/log-cartoon.png") 1x,url("../img/@2x/log-cartoon@2x.png") 2x);
+    background-image: -o-image-set(url("../img/log-cartoon.png") 1x,url("../img/@2x/log-cartoon@2x.png") 2x);
+}
+/* 登陆注册标题150113 */
+.lr_title_txt {height:40px;color:#34495e;}
+.lr_title_txt h2{line-height:40px;float:left;font-size:20px;font-weight:normal;margin:0;}
+.lr_title_txt span{font-size:14px;padding-top:12px;float:right;}
+.lr_title_txt span a{color:#3498db;}
+/* 成功提示 对与错 */
+.icon-warn{font-size:20px;color: #fcab2b;width:21px;display:block;float:right;text-align:center;line-height:21px;}
+.icon-ok{font-size:20px;color: #1abc9c;width:21px;display:block;float:right;text-align:center;line-height:21px;}
+.spanTip{color:#feac05;font-size:12px;}
+
+/* ====新版登陆 150113 ==== */
+.login_left .log-input{width: 350px;}
+.login_left{width:400px;float:left;padding-top:35px;padding-bottom:80px;margin-left: 115px;}
+/* 第三方帐号登录 */
+.login-wrap-party{width:160px;margin-left:100px;}
+.login-wrap-party h2{height:40px;width:100%;line-height:40px;text-align:center;font-size:18px;color:#34495e;font-weight:normal;margin-bottom:40px;padding-top:35px;}
+.login-wrap-party h2.h2 { line-height: 26px; height: 52px;}
+.login-party a{width:160px;display:block;float:left;margin-bottom:20px;opacity:1;/*opacity:0.7; filter:alpha(opacity=70);*/ }
+.login-party a p {width:80px;font-size:12px; height: 40px; line-height: 40px;float:left;text-align:center; display:block;text-align:center;color:#fff;}
+.login-party i{margin-left:15px;float:left;font-size:25px;line-height:40px;display:block;width:100%;width:40px;text-align:center;color:#fff;}
+.login-party a:hover{ opacity:1; filter:alpha(opacity=100); transition:all 0.2s;}
+.login-party span{ border-radius:2px;display:block;width:100%;height:40px;}
+.login-party .log-mi span{background:#ff9f2d;}/* mi */
+.login-party .log-sina span{background:#ff424f;}/* 新浪 */
+.login-party .log-qq span{background:#22a4ff;}/* qq */
+
+/* ====新版注册 150113 ==== */
+/*.reg_left{width:400px;padding-top:35px;padding-bottom:80px;margin:0 auto;}*/
+.reg_left{width:500px; padding-top:35px;padding-bottom:80px;margin:0 auto;}
+.reg_left .icon-warn{position:absolute;bottom:5px;right:0;}
+.reg_left .icon-ok{position:absolute;bottom:5px;right:0;}
+.reg_left .spanTip{position:absolute;right:0;bottom:-22px;}
+/* 美人鱼 */
+.reg_left .log-cartoon{top:50%;margin-top:-155px;right:-400px;}
+/* 是否同意协议 */
+.reg_checkboxline{font-size:14px;color:#b8c4ce;height:30px;margin:20px 0;line-height:30px;}
+.reg_checkboxline p a{font-size:14px;color:#34495e;}
+.reg_checkboxline i.boxcol{background:#3498db;color:#fff;}
+.icon-ok-sign{background:#b8c4ce;border-radius:2px;margin-right:10px;cursor:pointer; overflow:hidden;width:16px;height:16px;font-size:12px;display:block;margin-top:7px;line-height:16px;text-align:center;}
+/* ICON 字体大小 */
+.reg_cont_input i.iconfont{font-size:24px;position: absolute;top: 8px;}
+.reg_cont_input .log-input{width: 450px;}
+.reg_cont_input .lang-btn{width:100%;font-size:18px;height:50px;line-height:50px;}
+
+/* ====密码找回==== */
+.fg-code{width:50%;float:left}
+.fg-code-wp{height:40px;margin-top:30px;width:50%;float:left}
+.fg-code-pic{display:block;float:left;margin-left:10%;width:128px;height:40px}
+.fg-code-pic img{width:100%;height:auto}
+.fg-code-t{line-height: 40px;margin-left: 2%;}
+/* 登陆或注册验证错误 */
+.user-input-er-span{color:#b8c4ce;position:absolute;top:1px;right:1px;line-height:38px;height:38px;display:block;padding-right:35px;padding-left:8px;font-size:14px;background:#FFF}
+.user-input-er-span b{line-height:40px;}
+.user-input-er-span i:before{content:"\e606";position:absolute;top:0;right:0;height:38px;width:35px;display:block;font-size:20px;color:#fcab2b;
+line-height:38px;text-align:center}
+/* 验证正确 */
+.user-input-ri-span i:before{content:"\e600";position:absolute;top:1px;right:1px;line-height:38px;height:48px;display:block;width:35px;font-size:20px;
+color:#1abc9c;line-height:38px;text-align:center}
+
+.login-on .log-i{color:#3498db;}
+/*字体图标附加样式*/
+.log-i{ position: absolute; top: 8px; }
+.mls { margin-left: 30px !important; }
+.la_password{color: #b8c4ce;font-size: 16px;position: absolute;padding: 12px 2.5%;top: 0;height: 16px;line-height: 16px;left: 0; z-index:1;}
+/*图标字体大小*/
+.fsi {font-size: 20px!important;}
+.fsn {font-size: 22px!important;}
+.fss {font-size: 24px!important;}
+.fsm {font-size: 32px!important;}
+
+/*图标颜色*/
+.white {color: #fff!important; }
+.gray {color: #b8c5cf!important;}
+.dimgray {color: #6B7B8A!important;}
+.blue {color: #3498db!important;}  /*页面主色*/
+.navy {color: #369!important;}  /*深蓝色-链接a*/
+.green {color: #1abc9c!important;}  /*评论*/
+.yellow {color: #fcab2b!important;}  /*收藏*/
+.black {color: #34495e!important;} /*回复*/
+.red {color: #D52F17!important;} /*错误*/
+
+
+/* ====密码找回 end==== */
+
+/*绑定*/
+.bound-avatar { width: 100px; height: 100px; border-radius: 50%; margin: 25px 150px 0;}
+
+/* 页脚 */
+.log-footer { color: #b8c4cc; font-size: 14px; height: 30px; line-height: 30px; margin-top: 10px; }
+.log-footer p{display: inline-block;float: left;}
+
+/* 云朵 */
+.log-cloud-1 { width: 155px; height: 88px; top: 50px; position: absolute; left: 3.9285714%; z-index: 0; }
+.log-cloud-2 { width: 74px; height: 40px; top: 15px; position: absolute; left: 17.8571428%;  z-index: 0; }
+.log-cloud-3 { width: 155px; height: 88px; top: 160px; position: absolute; right: 9.2857142%;  z-index: 0; }
+.log-cloud-4 { width: 74px; height: 40px; top: 300px; position: absolute; right: 3.5714285%;  z-index: 0; }
+.log-cloud-1 i, .log-cloud-3 i{ font-size: 160px; line-height: 85px; color: #fff; }
+.log-cloud-2 i, .log-cloud-4 i{ font-size: 80px; line-height: 30px; color: #fff; }
+
+/*当浏览器的可视区域小于960px*/
+@media screen and (max-width: 960px) {
+.log-nav { display: none; } 
+.log-cartoon,.log-shade{display: none;}
+.login-wrap{width: 100%}
+.login-wrap-party{margin-right: 0;}
+/*.fg-code-pic{width: 13%;}*/
+.fg-msg{ width: 90%;}
+}
+
+/* 新绑定
+2015-05-08
+修改2015-06-18 */
+
+.bind-log { width: 400px; margin: 0 auto; padding: 30px 0; }
+.bind-log h1 { font-size: 20px; color: #34495e; font-weight: normal; }
+.bind-log h1 small { margin-left: 10px; font-size: 14px; color: #b8c4ce;}
+.bind-log .other { float: right; padding-top: 5px; font-size: 14px; }
+.bind-log .other a { color: #3498db;}
+.bind-log .info { width: 100px; margin: 25px auto 0; }
+.bind-log .info .avatar { width: 100px; height: 100px; border-radius: 50%;}
+.bind-log .info i { position: absolute; top: 65px; left: 50%; margin-left: 15px; width: 40px; height: 40px; border-radius: 50%;
+	font-size: 22px; color: #fff; line-height: 40px; text-align: center;} 
+/*.bind-log .info i.i-ui { background: url('../img/i-ui.png') no-repeat center center;}*/
+.bind-log .info i.icon-ui4 { background-color: #348fca; }
+.bind-log .info i.icon-mi { background-color: #f57923;}
+.bind-log .info i.icon-qq { background-color: #20a4ff;}
+.bind-log .info i.icon-sina { background-color: #ff414e;}
+.bind-log .info p { margin-top: 15px; font-size: 16px; color: #b8c4ce; text-align: center; }
+.bind-log .icon-relating { font-size: 45px; color:#b0bec9; width: 100%; padding-top: 55px; text-align: center; display: block;}
+
+.bind-control { display: block; height: 40px; width: 100%; border-bottom: #d7dcde 1px solid; margin-top: 20px;}
+.bind-control i { position: absolute; top: 8px; font-size: 24px;}
+.bind-control input { width: 350px; margin-left: 30px; padding: 10px; height: 20px; border: none; font-size: 16px; line-height: 20px; color: #34495e; background: #fff; }
+.bind-control.login-on { border-bottom-color: #3A99D8;}
+.bind-control.login-on i { color: #3A99D8;}
+
+.bind-control input::-moz-placeholder { color: #b8c4ce;}
+.bind-control input::-ms-input-placeholder { color: #b8c4ce;}
+.bind-control input::-webkit-input-placeholder { color: #b8c4ce;}
+.bind-control input:placeholder { color: #b8c4ce;}
+
+.tips-hide { display: none; }
+.tips-box { position: relative;}
+.tips-box .text { opacity: 0; visibility: hidden; position: absolute; bottom: 60px; left: 0; width: 360px; height: 60px; padding: 20px; background-color: #3499DA; font-size: 14px; color: #fff; text-align: justify; border-radius: 2px; 
+	-webkit-transform: -webkit-translate(0,15px);
+	   -moz-transform:    -moz-translate(0,15px);
+	    -ms-transform:     -ms-translate(0,15px);
+	     -o-transform:      -o-translate(0,15px);
+			transform:         translate(0,15px);
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s; }
+.tips-box .text:before { content: ""; position: absolute; bottom: -10px; left: 50%; margin-left: -8px; width: 0; height: 0; border-style: solid; border-color: #3499DA transparent transparent transparent; border-width: 10px 8px 0 8px; }
+.tips-box .lang-btn:hover + .text { opacity: 1; visibility: visible; 
+	-webkit-transform: -webkit-translate(0,0);
+	   -moz-transform:    -moz-translate(0,0); 
+	    -ms-transform:     -ms-translate(0,0); 
+	     -o-transform:      -o-translate(0,0); 
+	        transform:         translate(0,0); }
+.reg-link { float: right; height: 60px; font-size: 14px; color: #3498db; line-height: 40px; background-color: transparent; border: none; cursor: pointer;}
+
+/*验证提示信息*/
+.bind-log i.icon-ok,
+.bind-log i.icon-warn { position: absolute; bottom: 5px; right: 0;
+	font-size: 20px; width: 20px; display: block; float: right; text-align: center; line-height: 24px;}
+.bind-log i.icon-ok { color: #1abc9c; }
+.bind-log i.icon-warn { color: #fcab2b; }
+
+.bind-log .spanTip { position: absolute; right: 0; bottom: -22px; color: #feac05; font-size: 12px;}
+

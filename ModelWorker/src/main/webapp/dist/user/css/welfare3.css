@@ -1,0 +1,83 @@
+/* welfare3 样式 */
+.case-1 {
+    margin-top: 40px;
+}
+.case h4 {
+    margin-bottom: 20px;
+}
+.case tr {
+    height: 46px;
+}
+.case tr th {
+    font-weight: bolder;
+    text-align: center;
+    background: rgb(193,193,193);
+    font-size: 18px;
+}
+.case tr td {
+    font-size: 16px;
+    text-align: center;
+}
+.case tr td:nth-child(1) {
+    width: 100px;
+}
+.case tr td:nth-child(2) {
+    width: 220px;
+}
+.case tr td:nth-child(3) {
+    width: 127px;
+}
+.case tr td:nth-child(4) {
+    width: 126px;
+}
+.welfare_entry {
+    margin-bottom: 80px;
+}
+.wait_submit {
+    margin-left: 30%;
+}
+.wait_submit {
+     font-size: 18px;
+     font-weight: 700;
+     color: #FF6600;
+     margin-top: 20px;
+ }
+.payment {
+    margin: 25px 30%;
+    font-size: 16px;
+}
+.payment table tr {
+    height: 40px;
+}
+.payment table tr:hover {
+    background: #d0e9c6;
+}
+.payment table tr td {
+    color: red;
+    font-weight: 600;
+}
+.payment table tr td:nth-child(1) {
+    width: 214px;
+    text-align: center;
+}
+.payment table tr td:nth-child(2) {
+    width: 447px;
+    text-align: right;
+}
+.btn_submit {
+    width: 150px;
+    height: 35px;
+    line-height: 20px;
+    font-size: 18px;
+}
+.btn_submit:hover {
+    border: none;
+    background: rgba(25,198,50,.7);
+    color: #fff;
+}
+.pay {
+    position: absolute;
+    color: #000;
+    font-size: 18px;
+    margin-left: 20px;
+}

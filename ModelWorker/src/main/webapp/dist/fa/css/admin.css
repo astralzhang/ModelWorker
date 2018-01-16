@@ -1,0 +1,408 @@
+body{
+    color: #666666;
+}
+.ml{
+    margin-left:15px;
+    display: block;
+    width: 150px;
+    line-height: 22px;
+    float: left;
+    color: darkgray;
+    border-radius:3px;
+    border:1px solid;
+    padding-left: 5px;
+}
+.ml2{
+    padding-left: 0px;
+}
+select.ml{
+    height: 28px;
+}
+.fl{
+    float: left;
+}
+.mt1{
+    margin-top: 20px;
+}
+.mt{
+    margin-top: 10px;
+}
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+.bd{
+    border:1px solid darkgray;
+}
+.bl{
+    border-left: 1px solid darkgray;
+}
+.bri{
+    border-right: 1px solid darkgray;
+}
+.bt-n{
+    border-top: 1px solid rgb(241,241,241);
+}
+.bn{
+    border: 1px solid darkgrey;
+    border-right: none;
+}
+.search-btn{
+    margin-left: 10px;
+}
+.revisebtn-mg,.savebtn-mg{
+    width:75px ;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.txt-red a{
+    color: red;
+}
+.txt-bottom{
+    color:#3c8dbc ;
+}
+.txt-bottoml{
+    margin-left: 10px;
+}
+.txt-bottom a{
+    text-decoration: underline;
+}
+/*閻劍鍩涚粻锛勬倞閸滃苯顓归幋宄板灙鐞涳拷*/
+.box th{
+    color: black;
+    font-weight: 700;
+}
+
+.btn-group{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+}
+.search,.delete,.revise,.export,.import,.save{
+    float: left;
+    margin-left: 20px;
+}
+.add{
+    float: left;
+}
+.search-txt,.add-txt,.delete-txt,.revise-txt,.export-txt,.import-txt,.save-txt{
+    display: block;
+    float: left;
+    position: relative;
+    left: 45px;
+}
+.bg{
+    background: white;
+    text-align: center;
+}
+#example2 th{
+    text-align: center;
+}
+#example2_info{
+    text-align: left;
+    padding-top: 25px;
+}
+#example2_paginate{
+    text-align: right;
+}
+/*鐎广垺鍩涚拠锔藉剰*/
+.modal-body select.pull-right,
+.box-body select.pull-right,
+.box-body tr td select {
+    width: 152px !important;
+}
+.col-md-6 label span, .col-md-4 label span {
+    color: #b94a48;
+}
+.footer-btn {
+     text-align: center;
+ }
+.user-logo {
+    width:100px ;
+    height: 60px;
+    border: 1px solid red;
+    text-align: center;
+    margin: 10px 0 10px 20px;
+}
+.userim-table{
+    width: 380px;
+}
+.userim-table tr,.userim-save tr,.add-personnel tr{
+    text-align: right;
+}
+.txt-group{
+    line-height: 30px;
+    width: 400px;
+    text-align: center;
+}
+.logo-img{
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    left: 700px;
+}
+/*鐎广垺鍩涚拠锔藉剰娣囶喗鏁兼い鐢告桨*/
+.im-header{
+    width: 100%;
+    height: 32px;
+    background-color: rgb(193,193,193);
+}
+.userim-save{
+    width: 580px;
+    line-height: 35px;
+}
+.save-input{
+    width: 180px;
+    height: 25px;
+    float: left;
+}
+.save-input1{
+    width: 270px;
+    height: 25px;
+    float: left;
+}
+.save-input2{
+     width: 150px;
+     height: 22px;
+     float: left;
+ }
+.save-input3{
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+}
+.save-input4{
+    width: 80px;
+    height: 25px;
+    float: left;
+    margin-right: 20px;
+}
+.save-input5{
+    width: 140px;
+    height: 25px;
+    float: left;
+    margin-right: 20px;
+}
+.save-input6{
+    float: left;
+    background: url("../images/time2.png") 360px center no-repeat;
+}
+.btn-w{
+    width: 400px;
+    height: 45px;
+}
+/*閺傛澘顤冮崨妯轰紣*/
+.add-personnel{
+    width: 600px;
+    line-height: 35px;
+}
+.add-input{
+    width: 153px;
+    height: 25px;
+    float: left;
+}
+.add-input1{
+    width: 243px;
+    height: 25px;
+    float: left;
+}
+.add-input2{
+    width: 407px;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+    color: grey;
+}
+/*閸涙ê浼愮拠锔藉剰*/
+.main{
+    width: 1400px;
+    margin-left: 50px;
+}
+.main input{
+    border-radius: 5px;
+}
+.personnel-left{
+    width: 200px;
+    float: left;
+}
+.personnel-right{
+    width: 400px;
+    float: left;
+    margin-left: 40px;
+}
+.btn-ml{
+    margin-left: 385px;
+    width: 120px;
+    height: 40px;
+}
+.box-footer{
+    padding-bottom: 90px;
+    border: none;
+    text-align: center;
+}
+.header-ml{
+    margin: 20px 0 20px 110px;
+/*     width: 1000px; */
+    border: none;
+}
+.form-group{
+    margin-bottom:20px ;
+}
+.adress-txt{
+    display: block;
+    position: relative;
+    top: 30px;
+}
+.modal-w{
+    width: 1000px;
+}
+.boxmain{
+    width: 100%;
+    height: 810px;
+    padding-top: 10px;
+}
+.box-w{
+    width: 18%;
+    height: 790px;
+    background-color: white;
+    margin: 10px 0 0 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 30px 20px 0 20px;
+    line-height: 24px;
+}
+.box-w ul{
+    padding-left: 10px;
+}
+.box-w li{
+    list-style-type: none;
+}
+.boxmain li{
+    list-style-type: none;
+}
+.box-cont{
+    width: 77%;
+    height: 790px;
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid lightgrey;
+}
+.profileleft{
+    width: 25%;
+    height: 600px;
+    border: 1px solid lightgrey;
+    float: left;
+    padding: 20px 10px 0 10px;
+    line-height: 24px;
+}
+.profileleft ul{
+    padding-left: 10px;
+}
+.profileleft li{
+    list-style-type: none;
+}
+.profileleft a{
+    color: black;
+}
+.box-w a{
+    color: black;
+}
+.profileleft a:hover{
+   color: rosybrown;
+}
+.box-w a:hover{
+    color: rosybrown;
+}
+.profileright{
+    width: 75%;
+    height: 600px;
+    border: 1px solid lightgrey;
+    float: left;
+    padding-top: 40px;
+}
+.profilebox{
+    width: 80%;
+    margin: auto;
+    border: 1px solid lightgrey;
+}
+
+.check-select-box{
+    min-height: 150px;
+}
+
+#select1,#select2{
+    display: none;
+}
+
+.label-header{
+    line-height:30px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.label-header1{
+    width: 110px;
+}
+.label-header2{
+    width: 67px;
+}
+.label-header3{
+    width: 81px;
+}
+.label-header4{
+    width: 95px;
+}
+.label-width{
+    width: 100%;
+    height: 40px;
+}
+/* 娴溠冩惂缁狅紕鎮�*/
+.box-body tr td span {
+    color: #ff0000;
+}
+#welfare, .welfare-name {
+    width: 150px;
+}
+.welfare-name{
+    margin-left: 50px;
+}
+#underwriting  {
+    margin-left: 100px;
+}
+.prev-conditions {
+    width: 300px;
+}
+.prev-select {
+    margin-left: 50px;
+}
+
+/* 閺傝顢嶇粻锛勬倞 */
+.prev-step {
+    margin-bottom: 20px;
+}
+.next-step, .confirm {
+    text-align: center;
+}
+
+.date .form-control[readonly]{
+    background-color: #fff; 
+}
+
+
+.w15{
+    width: 150px;
+}
+.w20, .modal-body select.w20, .box-body tr td select.w20{
+    width: 200px !important;
+}
+.ml15{
+    margin-left: 15px;
+}
+.l30{
+    line-height: 30px;
+}
+.modal-dialog table.dataTable thead th, .modal-dialog table.dataTable tbody td{
+    padding: 5px;
+}
+.required {
+color: #ff0000;
+}

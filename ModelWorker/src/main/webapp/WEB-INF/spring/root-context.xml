@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+
+	<!-- Hibernate4 用友数据库 -->
+    <bean id="sessionFactory" 
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.dialect">cn.lmx.flow.dialect.SQLServerDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>
+                <prop key="hibernate.connection.autocommit">false</prop>
+            </props>
+        </property>
+        <property name="packagesToScan">
+            <list>
+                <!-- 可以加多个包 -->
+                <value>cn.lmx.flow.entity.flow</value>
+                <value>cn.lmx.flow.entity.module</value>
+                <value>cn.lmx.flow.entity.proxy</value>
+                <value>cn.lmx.flow.entity.system</value>
+                <value>cn.lmx.flow.entity.view</value>
+                <value>cn.lmx.flow.entity.duty</value>
+                <value>cn.lmx.flow.entity.task</value>
+                <value>cn.lmx.flow.entity.IF</value>
+                <value>cn.lmx.flow.entity.officework</value>
+                <value>cn.lmx.flow.entity.trade</value>
+            </list>
+        </property>
+    </bean>
+    <!-- 数据库映射 -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+      <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+      <property name="url" value="jdbc:mysql://127.0.0.1:3306/ModelWorker" />
+      <property name="username" value="root" />
+      <property name="password" value="123456" />
+   </bean>
+   <!-- 配置Hibernate事务管理器 -->
+    <bean id="transactionManager"
+        class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+      <property name="sessionFactory" ref="sessionFactory" />
+      <qualifier value="local"></qualifier>
+   </bean>
+   <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+   
+   <!-- Hibernate4 hr数据库 -->
+    <bean id="sessionFactoryForBusiness" 
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSourceForBusiness" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.dialect">cn.lmx.flow.dialect.SQLServerDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>
+                <prop key="hibernate.connection.autocommit">false</prop>
+            </props>
+        </property>
+        <property name="packagesToScan">
+            <list>
+                <!-- 可以加多个包 -->
+                <value>cn.lmx.flow.entity.business</value>
+            </list>
+        </property>
+    </bean>
+    <!-- 数据库映射 -->
+    <bean id="dataSourceForBusiness" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+      <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+      <property name="url" value="jdbc:mysql://127.0.0.1:3306/ModelWorker" />
+      <property name="username" value="root" />
+      <property name="password" value="123456" />
+   </bean>
+   <!-- 配置Hibernate事务管理器 -->
+    <bean id="transactionManagerForBusiness"
+        class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+      <property name="sessionFactory" ref="sessionFactoryForBusiness" />
+      <qualifier value="business"></qualifier>
+   </bean>
+   <tx:annotation-driven transaction-manager="transactionManagerForBusiness" proxy-target-class="true" />
+</beans>

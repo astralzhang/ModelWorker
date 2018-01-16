@@ -1,0 +1,60 @@
+/* welfare2 样式 */
+.case-1 {
+    margin-top: 40px;
+}
+.case h4 {
+    margin-bottom: 20px;
+}
+.case tr {
+    height: 46px;
+}
+.case tr th {
+    font-weight: bolder;
+    text-align: center;
+    background: rgb(193,193,193);
+    font-size: 18px;
+}
+.case tr td {
+    font-size: 16px;
+    text-align: center;
+}
+.case tr td:nth-child(1) {
+    width: 100px;
+}
+.case tr td:nth-child(2) {
+    width: 220px;
+}
+.case tr td:nth-child(3) {
+    width: 200px;
+}
+.case-1 tr:nth-child(2) td:nth-child(3) select, .case-1 tr:nth-child(3) td:nth-child(3) select {
+    width: 120px;
+}
+.case tr td:nth-child(4) {
+    width: 127px;
+}
+.case tr td:nth-child(5) {
+    width: 126px;
+}
+.welfare_entry {
+    margin-bottom: 80px;
+}
+.has_tips {
+    position: relative;
+}
+.has_tips:hover .tips-box {
+    display: block;
+}
+.tips-box {
+    width: 201px;
+    height: 56px;
+    background: url(../images/我的福利_录入2/u900.png) no-repeat;
+    position: absolute;
+    top: -35px;
+    left: 68%;
+    color: red;
+    line-height: 50px;
+    display: none;
+}
+
+

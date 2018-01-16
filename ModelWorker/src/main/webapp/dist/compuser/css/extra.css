@@ -1,0 +1,302 @@
+body{
+    color: #666666;
+}
+.ml{
+    margin-right:15px;
+    display: block;
+    width: 150px;
+    line-height: 22px;
+    float: left;
+}
+.fl{
+    float: left;
+}
+.mt1{
+    margin-top: 20px;
+}
+.mt{
+    margin-top: 10px;
+}
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+.bd{
+    border:1px solid darkgray;
+}
+.bl{
+    border-left: 1px solid darkgray;
+}
+.bri{
+    border-right: 1px solid darkgray;
+}
+.bt-n{
+    border-top: 1px solid rgb(241,241,241);
+}
+.bn{
+    border: 1px solid darkgrey;
+    border-right: none;
+}
+.search-btn{
+    margin-left: 10px;
+}
+.revisebtn-mg,.savebtn-mg{
+    width:75px ;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.txt-red a{
+    color: red;
+}
+.txt-bottom{
+    color:#3c8dbc ;
+}
+.txt-bottoml{
+    margin-left: 10px;
+}
+.txt-bottom a{
+    text-decoration: underline;
+}
+/*用户管理和客户列表*/
+.box th{
+    color: black;
+    font-weight: 700;
+}
+
+.btn-group{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+}
+.search,.delete,.revise,.export,.import,.save{
+    float: left;
+    margin-left: 20px;
+}
+.add{
+    float: left;
+}
+.search-txt,.add-txt,.delete-txt,.revise-txt,.export-txt,.import-txt,.save-txt{
+    display: block;
+    float: left;
+    position: relative;
+    left: 45px;
+}
+.bg{
+    background: white;
+    text-align: center;
+}
+#example2 th{
+    text-align: center;
+}
+#example2_info{
+    text-align: left;
+    padding-top: 25px;
+}
+#example2_paginate{
+    text-align: right;
+}
+/*客户详情*/
+.user-logo{
+    width:100px ;
+    height: 60px;
+    border: 1px solid red;
+    text-align: center;
+    margin: 10px 0 10px 20px;
+}
+.userim-table{
+    width: 380px;
+}
+.userim-table tr,.userim-save tr,.add-personnel tr{
+    text-align: right;
+}
+.txt-group{
+    line-height: 30px;
+    width: 400px;
+    text-align: center;
+}
+.logo-img{
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    left: 700px;
+}
+/*客户详情修改页面*/
+.im-header{
+    width: 100%;
+    height: 32px;
+    background-color: rgb(193,193,193);
+}
+.userim-save{
+    width: 580px;
+    line-height: 35px;
+}
+.save-input{
+    width: 180px;
+    height: 25px;
+    float: left;
+}
+.save-input1{
+    width: 270px;
+    height: 25px;
+    float: left;
+}
+.save-input2{
+     width: 150px;
+     height: 22px;
+     float: left;
+ }
+.save-input3{
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+}
+.save-input4{
+    width: 80px;
+    height: 25px;
+    float: left;
+    margin-right: 20px;
+}
+.save-input5{
+    width: 140px;
+    height: 25px;
+    float: left;
+    margin-right: 20px;
+}
+.save-input6{
+    float: left;
+    background: url("../images/time2.png") 360px center no-repeat;
+}
+.btn-w{
+    margin-left: 105px;
+    width: 400px;
+    height: 45px;
+}
+/*新增员工*/
+.add-personnel{
+    width: 600px;
+    line-height: 35px;
+}
+.add-input{
+    width: 153px;
+    height: 25px;
+    float: left;
+}
+.add-input1{
+    width: 243px;
+    height: 25px;
+    float: left;
+}
+.add-input2{
+    width: 407px;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+    color: grey;
+}
+/*员工详情*/
+.main{
+    width: 1400px;
+    margin-left: 50px;
+}
+.main input{
+    border-radius: 5px;
+}
+.personnel-left{
+    width: 200px;
+    float: left;
+}
+.personnel-right{
+    width: 400px;
+    float: left;
+    margin-left: 40px;
+}
+.btn-ml{
+    margin-left: 385px;
+    width: 120px;
+    height: 40px;
+}
+.box-footer{
+    width: 1000px;
+    margin-left: 120px;
+    padding-bottom: 90px;
+    border: none;
+}
+.header-ml{
+    margin: 20px 0 20px 110px;
+    width: 1000px;
+    border: none;
+}
+.form-control{
+    height: 40px;
+}
+.form-group{
+    margin-bottom:20px ;
+}
+.adress-txt{
+    display: block;
+    position: relative;
+    top: 30px;
+}
+.modal-w{
+    width: 1000px;
+}
+.boxmain{
+    width: 100%;
+    height: 810px;
+    padding-top: 10px;
+}
+.box-w{
+    width: 15%;
+    height: 790px;
+    background-color: white;
+    margin: 10px 0 0 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 40px 40px 0 40px;
+}
+.box-w li{
+    list-style-type: none;
+}
+.boxmain li{
+    list-style-type: none;
+}
+.box-cont{
+    width: 80%;
+    height: 790px;
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid lightgrey;
+}
+.profileleft{
+    width: 15%;
+    height: 600px;
+    border: 1px solid lightgrey;
+    float: left;
+    padding: 40px 30px 0 30px;
+}
+.profileleft li{
+    list-style-type: none;
+}
+.profileleft a{
+    color: black;
+}
+.box-w a{
+    color: black;
+}
+.profileleft a:hover{
+   color: rosybrown;
+}
+.box-w a:hover{
+    color: rosybrown;
+}
+.profileright{
+    width: 85%;
+    height: 600px;
+    border: 1px solid lightgrey;
+    float: left;
+    padding-top: 100px;
+}
+.profilebox{
+    width: 80%;
+    margin: auto;
+    border: 1px solid lightgrey;
+}

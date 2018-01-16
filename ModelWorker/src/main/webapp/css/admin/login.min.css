@@ -1,0 +1,26 @@
+html, body{height: 100%;width: 100%;}
+
+body{margin: 0;padding: 0;width: 100%;display: table;font-weight: 100;font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "microsoft yahei", sans-serif;*font-family: "microsoft yahei";background: url("/images/bg_login.jpg") no-repeat center center;background-size: cover;}
+
+.login-container{position: absolute;width: 400px;top: 10%;left:50%;margin-left:-200px;transition:1s;-webkit-transition:1s;-moz-transition:1s;}
+
+.login-box{padding: 30px 30px;height: 380px;border-radius: 15px;background-color: #fff;/*background-color: rgba(255,255,255,.25);filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=50)";*/}
+.login-box .login_tit{text-align:center;margin:0 auto 30px;}
+.login-box label{color:#666;}
+.login-box .btn_login{padding:5px 40px;}
+.form-group span.glyphicon{left: 92%;top: -25px;color: #555;}
+
+.form-group .form-control{height: 38px;opacity: .8;}
+
+.form-control:focus{opacity: 1!important;}
+
+.shadow{-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.3);box-shadow: 0 5px 10px rgba(0,0,0,.3);filter:progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=135, Strength=4);}
+.title{width: auto;height: 68px;margin:0 auto;text-indent: -9999px;background: url(/images/login_title.png) no-repeat center center;background-size:100% auto;}
+a.links{text-align: center;margin: 0 6px;color: #000;float: right;padding:8px 0;}
+.links hr {opacity: .5;}
+
+@media (max-width:640px){
+    .login-container{width:auto;min-width:50%;top:5px;left:20px;right: 20px;bottom:5px;}
+    .login-container br {margin: 0;}
+
+}

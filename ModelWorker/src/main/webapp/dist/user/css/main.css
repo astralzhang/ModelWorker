@@ -1,0 +1,27 @@
+.pos {
+    position: relative;
+}
+.log-row-cx {
+    width: 92.5925925%;
+    min-height: 400px;
+    margin: 0 3.7037037%;
+    background: #fff;
+}
+.reg_left {
+    width: 500px;
+    padding-top: 35px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+.reg_left h2 {
+    line-height: 40px;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.reg_left input::-moz-placeholder { color: #b8c4ce;}
+.reg_left input::-ms-input-placeholder { color: #b8c4ce;}
+.reg_left input::-webkit-input-placeholder { color: #b8c4ce;}
+.reg_left input:placeholder { color: #b8c4ce;}
+

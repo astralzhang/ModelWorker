@@ -1,2 +1,0 @@
-# ModelWorker
-develop for SZZGH

@@ -1,0 +1,109 @@
+.box{
+    padding: 0;
+    border-top: 3px solid #d2d6de;
+}
+.box.box-primary {
+    border-top-color: #3c8dbc;
+}
+.home-main {
+    min-height: 408px;
+    min-width: 980px;
+}
+.home-main .box-body{
+    padding: 10px 20px;
+}
+.user_word {
+    margin-top: 20px;
+}
+.home-box {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ccc;
+}
+.home-box .row{
+  margin-bottom: 10px;
+}
+.user_info h3>.btn{
+  margin-left: 10px;
+}
+.user_info h4{
+  padding-left: 50px;
+}
+.user_info h4 img{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.user_info h4 span.point{
+  font-size: 14px;
+  color: #f00;
+}
+.user_info h4 span.link{
+  padding-left: 10px;
+  font-size: 12px;
+}
+h3.text-success{
+  font-size: 20px;
+}
+.home{
+  padding-bottom: 15px;
+}
+
+/* 列表 */
+.main-box .clear{
+    padding-left: 15px;
+}
+.clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.item_box {
+    display: list-item;
+    float: left;
+    width: 218px;
+    height: auto;
+    margin: 0px 20px 25px 0px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    list-style: none;
+}
+.item_box .item_img {
+    width: 216px;
+    height: 216px;
+    overflow: hidden;
+}
+.item_box .item_img img {
+    width: 216px;
+    height: 216px;
+}
+.item_box .item_text {
+    height: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.item_box .item_text .price {
+    padding: 15px 0 10px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #eb282d;
+    font-size: 14px;
+    position: relative;
+}
+.item_box .item_text .desc {
+    height: 40px;
+    line-height: 20px;
+    margin: 10px 0px 20px 0px;
+    color: #5d5d5d;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.case h3 {
+    font-size: 18px;
+}
+#entry_edit tr>td {
+    vertical-align: middle;
+}

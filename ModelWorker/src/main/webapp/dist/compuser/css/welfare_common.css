@@ -1,0 +1,29 @@
+/* welfare_common 样式 */
+input, button {
+    outline: none;
+}
+.home {
+}
+.welfare_entry {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.entry-step {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+.entry-step button {
+    width: 120px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.entry-step img{
+    width: 15%;
+}
+.entry {
+    color: #fff;
+}
