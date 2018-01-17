@@ -47,9 +47,9 @@
     <!-- 数据库映射 -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
       <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-      <property name="url" value="jdbc:mysql://127.0.0.1:3306/ModelWorker" />
+      <property name="url" value="jdbc:mysql://192.168.1.126:3306/ModelWorker" />
       <property name="username" value="root" />
-      <property name="password" value="123456" />
+      <property name="password" value="1234" />
    </bean>
    <!-- 配置Hibernate事务管理器 -->
     <bean id="transactionManager"
@@ -82,9 +82,9 @@
     <!-- 数据库映射 -->
     <bean id="dataSourceForBusiness" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
       <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-      <property name="url" value="jdbc:mysql://127.0.0.1:3306/ModelWorker" />
+      <property name="url" value="jdbc:mysql://192.168.1.126:3306/ModelWorker" />
       <property name="username" value="root" />
-      <property name="password" value="123456" />
+      <property name="password" value="1234" />
    </bean>
    <!-- 配置Hibernate事务管理器 -->
     <bean id="transactionManagerForBusiness"
